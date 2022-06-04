@@ -1,8 +1,10 @@
+import { Container } from "./styles";
+
 function table(){
     return (
-        <div>
+        <Container>
             Table
-        </div>
+        </Container>
     )
 }
 
