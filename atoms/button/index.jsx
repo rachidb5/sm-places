@@ -2,7 +2,7 @@ import { Btn } from './styles'
 
 function Button(){
     return(
-        <Btn>
+        <Btn type='submit' onClick={() => console.log("teste")}>
             Novo Produto
         </Btn>
     )

@@ -3,6 +3,7 @@ import PaginationButton from "../../atoms/paginationButton/index";
 import { PaginationContainer } from "./styles";
 import { BsChevronDoubleLeft } from 'react-icons/bs'
 import { BsChevronDoubleRight} from 'react-icons/bs'
+import { MdSell } from 'react-icons/md'
 
 function Pagination(){
     return(

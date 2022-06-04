@@ -6,5 +6,9 @@ export const Btn = styled.button`
     color: #fff;
     background: #1366E2;
     border: none;
-    border-radius: 4px
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background: #0a5cd0;
+    }
 `
