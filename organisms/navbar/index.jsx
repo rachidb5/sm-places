@@ -1,8 +1,10 @@
+import { Nav } from './styles'
+
 function navbar(){
     return (
-        <div>
+        <Nav>
             Nav
-        </div>
+        </Nav>
     )
 }
 

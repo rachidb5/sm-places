@@ -1,7 +1,7 @@
 function footer(){
     return (
         <div>
-            Nav
+            Footer
         </div>
     )
 }
