@@ -4,9 +4,11 @@ import { TableContainer, TableHead, Table, TableHeader } from './styles'
 import TableLine from "../../atoms/TableLine/index";
 
 function Tabela(){
-    const { loading, setLoading, data, setData, itemsNumber } = useContext(Context)
+    const { data, itemsNumber, term } = useContext(Context)
     let filteredData = data.slice(0, itemsNumber)
+    filteredData = filteredData.filter(d => d.name.toLowerCase().includes(term.toLowerCase()))
 
+    console.log(term)
     return(
     <TableContainer>
         {console.log(typeof itemsNumber)}

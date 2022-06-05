@@ -6,6 +6,7 @@ function Provider({ children }) {
     const [data, setData] = useState(Data)
     const [pageNumber, setPageNumber] = useState(1)
     const [itemsNumber, setItemsNumber] = useState(5)
+    const [term, setTerm] = useState('')
 
       const context = {
         data,
@@ -13,7 +14,9 @@ function Provider({ children }) {
         pageNumber,
         setPageNumber,
         itemsNumber,
-        setItemsNumber
+        setItemsNumber,
+        term,
+        setTerm
       };
     
     return (
