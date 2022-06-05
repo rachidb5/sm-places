@@ -5,5 +5,4 @@ width: 100%;
 background: #fff;
 border-radius: 6px;
 padding: 1.5rem;
-max-height: 80vh;
 `

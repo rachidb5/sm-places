@@ -4,10 +4,12 @@ import { TableContainer, TableHead, Table, TableHeader } from './styles'
 import TableLine from "../../atoms/TableLine/index";
 
 function Tabela(){
-    const { loading, setLoading, data, setData } = useContext(Context)
-return(
+    const { loading, setLoading, data, setData, itemsNumber } = useContext(Context)
+    let filteredData = data.slice(0, itemsNumber)
+
+    return(
     <TableContainer>
-        {console.log(data)}
+        {console.log(typeof itemsNumber)}
         <Table>
             <TableHead>
                 <tr>
@@ -21,7 +23,7 @@ return(
                 </tr>
             </TableHead>
             <tbody>
-                {data.map(d => <TableLine key={d.id} image={d.image} name={d.name} estoque={d.quantity} codigo={d.code} categoria={d.categories} status={d.status === true ? 'Ativo':'Inativo'}/>)}
+                {filteredData.map(d => <TableLine key={d.id} image={d.image} name={d.name} estoque={d.quantity} codigo={d.code} categoria={d.categories} status={d.status === true ? 'Ativo':'Inativo'}/>)}
             </tbody>
         </Table>
     </TableContainer>

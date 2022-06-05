@@ -6,7 +6,6 @@ align-items:stretch;
 padding:0;
 display: flex;
 flex-direction: row;
-height: 100vh;
 `
 
 export const View = styled.div`

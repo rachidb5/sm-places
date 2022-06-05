@@ -2,9 +2,8 @@ import styled from 'styled-components'
 
 export const TableContainer = styled.div`
 margin-top: 5%;
-max-height: 320px;
 overflow-x: hidden;
-overflow-y: scroll;
+overflow-y: hidden;
 `
 
 export const TableHead = styled.thead`

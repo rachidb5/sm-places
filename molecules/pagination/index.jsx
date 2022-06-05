@@ -10,7 +10,6 @@ function Pagination(){
     const { pageNumber, setPageNumber } = useContext(Context)
     return(
         <PaginationContainer>
-            {console.log(pageNumber)}
             <PaginationButton 
                 icon={BsChevronDoubleLeft}
                 onClick={() => {pageNumber > 1 ? setPageNumber(pageNumber-1):null}}

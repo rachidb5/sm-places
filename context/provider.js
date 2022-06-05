@@ -5,13 +5,15 @@ import { Data } from '../services/api'
 function Provider({ children }) {
     const [data, setData] = useState(Data)
     const [pageNumber, setPageNumber] = useState(1)
-
+    const [itemsNumber, setItemsNumber] = useState(5)
 
       const context = {
         data,
         setData,
         pageNumber,
-        setPageNumber
+        setPageNumber,
+        itemsNumber,
+        setItemsNumber
       };
     
     return (
