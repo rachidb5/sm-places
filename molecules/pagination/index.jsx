@@ -7,7 +7,7 @@ import React, { useContext } from 'react'
 import Context from '../../context/context'
 
 function Pagination(){
-    const { pageNumber, setPageNumber } = useContext(Context)
+    const { pageNumber, setPageNumber, itemsNumber, data } = useContext(Context)
     return(
         <PaginationContainer>
             <PaginationButton 
@@ -17,7 +17,7 @@ function Pagination(){
             <PaginationInput pageNumber={pageNumber}/>
             <PaginationButton 
                 icon={BsChevronDoubleRight} 
-                onClick={() => setPageNumber(pageNumber+1)}
+                onClick={() => {pageNumber < (data.length/itemsNumber) ? setPageNumber(pageNumber+1):null}}
             />
         </PaginationContainer>
     )

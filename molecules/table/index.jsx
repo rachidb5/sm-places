@@ -4,9 +4,10 @@ import { TableContainer, TableHead, Table, TableHeader } from './styles'
 import TableLine from "../../atoms/TableLine/index";
 
 function Tabela(){
-    const { data, itemsNumber, term } = useContext(Context)
-    let filteredData = data.slice(0, itemsNumber)
-    filteredData = filteredData.filter(d => d.name.toLowerCase().includes(term.toLowerCase()))
+    const { data, itemsNumber, term, pageNumber } = useContext(Context)
+    let pagedData = data.slice((pageNumber*itemsNumber)-itemsNumber,pageNumber*itemsNumber)
+    let filteredData = pagedData.slice(0, itemsNumber)
+    filteredData = filteredData.filter(d => (d.name+d.categories+d.code).toLowerCase().includes(term.toLowerCase()))
 
     console.log(term)
     return(
