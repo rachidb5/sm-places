@@ -2,7 +2,7 @@ import { PageNumberInput } from './styles'
 
 function PaginationInput(props){
     return(
-        <PageNumberInput value={props.pagenumber}/>
+        <PageNumberInput value={props.pageNumber}/>
     )
 }
 

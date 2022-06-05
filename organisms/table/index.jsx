@@ -1,9 +1,12 @@
 import { Container } from "./styles";
+import SearchInput from "../../atoms/searchInput/index";
+import Tabela from "../../molecules/table/index";
 
 function table(){
     return (
         <Container>
-            Table
+            <SearchInput />
+            <Tabela />
         </Container>
     )
 }

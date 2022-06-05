@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import Context from '../context/context';
 
 function Provider({ children }) {
-    const [data, setData] = useState([]);
+    const [pageNumber, setPageNumber] = useState(1)
+    const [loading, setLoading] = useState(true)
  
       const context = {
-        data,
-        setData,
+        loading,
+        setLoading,
+        pageNumber,
+        setPageNumber
       };
     
     return (

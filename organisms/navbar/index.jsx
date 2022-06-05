@@ -4,6 +4,7 @@ import smplaces from '../../assets/smplaces.png';
 import SideMenu from '../../molecules/SideMenu';
 import AdminLink from '../../molecules/adminLink/index';
 
+
 function Navbar(){
     return (
         <Nav>
