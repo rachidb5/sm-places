@@ -1,6 +1,5 @@
 import { Nav, ImgContainer } from './styles'
 import Img from 'next/image'
-import smplaces from '../../assets/smplaces.png';
 import SideMenu from '../../molecules/SideMenu';
 import AdminLink from '../../molecules/adminLink/index';
 
@@ -9,7 +8,10 @@ function Navbar(){
     return (
         <Nav>
             <ImgContainer>
-            <Img src={smplaces}/>
+            <img 
+            width="108px"
+            height="18px"
+            src="https://www.smplaces.com.br/blog/wp-content/uploads/2021/10/SM-Places-marketplaces.png"/>
             </ImgContainer>
             <SideMenu />
             <AdminLink />
