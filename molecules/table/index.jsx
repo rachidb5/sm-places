@@ -1,11 +1,30 @@
 import { useEffect, useState, useContext } from "react"
-import Api from "../../services/api"
+import Context from '../../context/context';
+import { TableContainer, TableHead, Table, TableHeader } from './styles'
+import TableLine from "../../atoms/TableLine/index";
 
 function Tabela(){
+    const { loading, setLoading, data, setData } = useContext(Context)
 return(
-    <div>
-        aaaa
-    </div>
+    <TableContainer>
+        {console.log(data)}
+        <Table>
+            <TableHead>
+                <tr>
+                    <TableHeader></TableHeader>
+                    <TableHeader></TableHeader>
+                    <TableHeader>Produto</TableHeader>
+                    <TableHeader>Qtd. Estoque</TableHeader>
+                    <TableHeader>Código</TableHeader>
+                    <TableHeader>Categoria</TableHeader>
+                    <TableHeader>Status</TableHeader>
+                </tr>
+            </TableHead>
+            <tbody>
+                {data.map(d => <TableLine key={d.id} image={d.image} name={d.name} estoque={d.quantity} codigo={d.code} categoria={d.categories} status={d.status === true ? 'Ativo':'Inativo'}/>)}
+            </tbody>
+        </Table>
+    </TableContainer>
 )
 }
 

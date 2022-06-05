@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Context from '../context/context';
+import { Data } from '../services/api'
 
 function Provider({ children }) {
+    const [data, setData] = useState(Data)
     const [pageNumber, setPageNumber] = useState(1)
-    const [loading, setLoading] = useState(true)
- 
+
+
       const context = {
-        loading,
-        setLoading,
+        data,
+        setData,
         pageNumber,
         setPageNumber
       };

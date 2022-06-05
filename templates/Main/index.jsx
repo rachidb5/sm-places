@@ -6,7 +6,6 @@ import Loding from '../../molecules/loading/index'
 import { MainDiv, View } from './styles'
 import React, {useContext} from 'react'
 import Context from '../../context/context'
-import Loading from '../../molecules/loading/index'
 
 
 function Main(){
@@ -16,7 +15,7 @@ function Main(){
             <Navbar />
             <View>
                 <Header />
-                {loading ? <Loading />: <Table />}
+                <Table />
                 <Footer />
             </View>
         </MainDiv>

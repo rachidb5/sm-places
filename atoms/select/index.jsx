@@ -1,5 +1,5 @@
 import { SelectInput } from "./styles"
-const itemsTotal = [5,10,15,20,25,50]
+const itemsTotal = [5,10]
 
 function Select(){
     return(
