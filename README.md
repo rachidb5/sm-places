@@ -24,8 +24,15 @@ npm run build
 npm start
 ```
 
-## Executando teste
+## Executando testes
 
 ```bash
 npm test
 ```
+
+## Disponivel em
+
+```bash
+https://sm-places.vercel.app/
+```
+
