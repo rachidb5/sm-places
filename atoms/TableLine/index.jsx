@@ -4,7 +4,7 @@ import Img from 'next/image'
 function TableLine(props){
     return(
         <Tr>
-            <TD><input type="checkbox"/></TD>
+            <TD><input type="checkbox" role="checkbox"/></TD>
             <TDImg><img src={props.image} width="35px" height="35px"/></TDImg>
             <TD>{props.name}</TD>
             <TD>{props.estoque}</TD>

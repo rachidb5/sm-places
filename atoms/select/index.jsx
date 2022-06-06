@@ -7,7 +7,8 @@ function Select(){
     const { itemsNumber, setItemsNumber, data, setData } = useContext(Context)
 
     return(
-        <SelectInput  
+        <SelectInput
+            role='select'
             onChange={({ target: { value } }) => {setItemsNumber(parseInt(value))}}>
             {itemsTotal.map(i => <option key={i} value={i}>{i}</option>)}
         </SelectInput>

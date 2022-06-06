@@ -9,7 +9,6 @@ import Context from '../../context/context'
 
 
 function Main(){
-    const { loading, setLoading } = useContext(Context)
     return(
         <MainDiv>
             <Navbar />
