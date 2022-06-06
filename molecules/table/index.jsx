@@ -16,13 +16,13 @@ function Tabela(){
         <Table>
             <TableHead>
                 <tr>
-                    <TableHeader></TableHeader>
-                    <TableHeader></TableHeader>
-                    <TableHeader>Produto</TableHeader>
-                    <TableHeader>Qtd. Estoque</TableHeader>
-                    <TableHeader>Código</TableHeader>
-                    <TableHeader>Categoria</TableHeader>
-                    <TableHeader>Status</TableHeader>
+                    <TableHeader role='column'></TableHeader>
+                    <TableHeader role='column'></TableHeader>
+                    <TableHeader role='column'>Produto</TableHeader>
+                    <TableHeader role='column'>Qtd. Estoque</TableHeader>
+                    <TableHeader role='column'>Código</TableHeader>
+                    <TableHeader role='column'>Categoria</TableHeader>
+                    <TableHeader role='column'>Status</TableHeader>
                 </tr>
             </TableHead>
             <tbody>

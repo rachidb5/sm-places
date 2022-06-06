@@ -6,6 +6,7 @@ function SearchInput(){
     const { setTerm } = useContext(Context)
     return(
         <InputSearch
+            role="search"
             type='text'
             onChange={({ target: { value } }) => {setTerm(value)}}
             placeholder="Busque por Nome, EAN ou Código"
