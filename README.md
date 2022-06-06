@@ -32,7 +32,8 @@ npm test
 
 ## Disponivel em
 
-```bash
-https://sm-places.vercel.app/
-```
+
+[https://sm-places.vercel.app/](https://sm-places.vercel.app/)
+
+
 
