@@ -1,16 +1,16 @@
 import { Container } from "./styles";
 import SearchInput from "../../atoms/searchInput/index";
-import Tabela from "../../molecules/table/index";
+import TableMolecule from "../../molecules/table/index";
 import TableMenu from "../../molecules/tableMenu/index";
 
-function table(){
+function TableOrganism(){
     return (
         <Container>
             <TableMenu />
             <SearchInput />
-            <Tabela />
+            <TableMolecule />
         </Container>
     )
 }
 
-export default table;
+export default TableOrganism;

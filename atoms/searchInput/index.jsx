@@ -1,6 +1,6 @@
 import { InputSearch } from './styles'
 import Context from '../../context/context'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 
 function SearchInput(){
     const { setTerm } = useContext(Context)

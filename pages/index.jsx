@@ -1,4 +1,4 @@
-import Main from '../templates/Main/index'
+import Main from '../templates/main/index'
 import Head from 'next/head'
 import Image from 'next/image'
 

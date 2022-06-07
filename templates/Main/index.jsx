@@ -1,6 +1,6 @@
 import Navbar from  '../../organisms/navbar/index'
 import Header from  '../../organisms/header/index'
-import Table from  '../../organisms/table/index'
+import TableOrganism from  '../../organisms/table/index'
 import Footer from  '../../organisms/footer/index'
 import Loding from '../../molecules/loading/index'
 import { MainDiv, View } from './styles'
@@ -14,7 +14,7 @@ function Main(){
             <Navbar />
             <View>
                 <Header />
-                <Table />
+                <TableOrganism />
                 <Footer />
             </View>
         </MainDiv>
