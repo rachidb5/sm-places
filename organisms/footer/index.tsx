@@ -1,5 +1,5 @@
-import Select from '../../atoms/select';
-import Pagination from '../../molecules/pagination';
+import Select from '../../atoms/select/index';
+import Pagination from '../../molecules/pagination/index';
 import { FooterContainer, ItemsCountContainer, Label, Div } from './styles'
 
 function footer(){

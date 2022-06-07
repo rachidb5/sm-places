@@ -1,5 +1,4 @@
 import { Nav, ImgContainer } from './styles'
-import Img from 'next/image'
 import SideMenu from '../../molecules/sideMenu/index';
 import AdminLink from '../../molecules/adminLink/index';
 

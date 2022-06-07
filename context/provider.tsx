@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactNode } from 'react';
 import Context from './context';
 import { Data } from '../services/api'
 
-function Provider({ children }) {
+interface IProvider {
+  children: ReactNode;
+}
+
+function Provider({ children }: IProvider) {
     const [data, setData] = useState(Data)
     const [pageNumber, setPageNumber] = useState(1)
     const [itemsNumber, setItemsNumber] = useState(5)
