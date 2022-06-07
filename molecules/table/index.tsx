@@ -12,7 +12,6 @@ function TableMolecule(){
     console.log(term)
     return(
     <TableContainer>
-        {console.log(typeof itemsNumber)}
         <Table>
             <TableHead>
                 <tr>
