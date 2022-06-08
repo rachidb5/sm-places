@@ -1,13 +1,13 @@
 import { useEffect, useState, useContext } from "react"
-import Context from '../../context/context';
+import Context, { IProducts } from '../../context/context';
 import { TableContainer, TableHead, Table, TableHeader } from './styles'
 import TableLine from "../../atoms/tableLine/index";
 
 function TableMolecule(){
     const { data, itemsNumber, term, pageNumber } = useContext(Context)
-    let pagedData = data.slice((pageNumber*itemsNumber)-itemsNumber,pageNumber*itemsNumber)
-    let filteredData = pagedData.slice(0, itemsNumber)
-    filteredData = filteredData.filter(data => (data.name+data.categories+data.code).toLowerCase().includes(term.toLowerCase()))
+    let filteredData: IProducts[]  = data.filter(data => (data.name+data.categories+data.code).toLowerCase().includes(term.toLowerCase()))
+    filteredData = filteredData.slice((pageNumber*itemsNumber)-itemsNumber,pageNumber*itemsNumber)
+    filteredData = filteredData.slice(0, itemsNumber)
 
     console.log(term)
     return(

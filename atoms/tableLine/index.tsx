@@ -1,5 +1,4 @@
 import { TD, TDImg, Tr } from './styles'
-import Img from 'next/image'
 
 function TableLine(props){
     return(

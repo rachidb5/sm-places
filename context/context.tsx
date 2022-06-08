@@ -1,6 +1,6 @@
 import React from "react";
 
-interface IProducts{
+export interface IProducts{
     id: number;
     name: string;
     price: number;
@@ -11,7 +11,7 @@ interface IProducts{
     image: string;
 }
 
-interface IStoreContext {
+interface IContext {
     data: IProducts[];
     pageNumber: number;
     itemsNumber: number;
@@ -22,6 +22,6 @@ interface IStoreContext {
     setTerm:(param: string) => void;
   }
 
-const Context = React.createContext({}  as IStoreContext);
+const Context = React.createContext({}  as IContext);
 
 export default Context;
