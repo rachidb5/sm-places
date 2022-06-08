@@ -2,7 +2,7 @@ import Select from '../../atoms/select/index';
 import Pagination from '../../molecules/pagination/index';
 import { FooterContainer, ItemsCountContainer, Label, Div } from './styles'
 
-function footer(){
+function Footer(){
     return (
         <FooterContainer>
             <ItemsCountContainer>
@@ -17,4 +17,4 @@ function footer(){
     )
 }
 
-export default footer;
+export default Footer;

@@ -1,6 +1,6 @@
 import { Title, Link } from './styles'
 
-function AdmLinktitle(props){
+function AdmLinkTitle(props){
     return(
         <Title>
             <Link>
@@ -10,4 +10,4 @@ function AdmLinktitle(props){
     )
 }
 
-export default AdmLinktitle
+export default AdmLinkTitle
