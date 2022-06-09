@@ -1,6 +1,14 @@
 import { TD, TDImg, Tr } from './styles'
 
-function TableLine(props){
+type Props = {
+    image: string,
+    name: string,
+    quantity: number,
+    code: string,
+    category: string,
+    status: string
+}
+function TableLine(props: Props){
     return(
         <Tr>
             <TD><input type="checkbox" role="checkbox"/></TD>

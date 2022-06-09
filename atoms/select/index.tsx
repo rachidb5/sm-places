@@ -3,7 +3,10 @@ const itemsTotal = [5,10]
 import { useContext } from 'react'
 import Context from '../../context/context'
 
-function Select(props){
+type Props ={
+    items: number[]
+}
+function Select(props: Props){
     const { setItemsNumber } = useContext(Context)
 
     return(

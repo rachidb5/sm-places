@@ -1,6 +1,9 @@
 import { Li, LiButton } from './styles'
 
-function SubMenuItem(props){
+type Props = {
+    item: string
+}
+function SubMenuItem(props: Props){
     return(
         <Li>
             <LiButton>

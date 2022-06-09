@@ -1,6 +1,9 @@
 import { Title, Link } from './styles'
 
-function AdmLinkTitle(props){
+type Props = {
+    title: string
+}
+function AdmLinkTitle(props: Props){
     return(
         <Title>
             <Link>

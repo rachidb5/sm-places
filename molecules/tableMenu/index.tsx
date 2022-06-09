@@ -1,11 +1,13 @@
+import { listenerCount } from 'node:stream'
 import { Nav, Anchor } from './styles'
 
-function TableMenu(){
+type Props = {
+    list: string[]
+}
+function TableMenu(props: Props){
     return(
         <Nav>
-            <Anchor>
-                Todos
-            </Anchor>
+            {props.list.map(item => <Anchor key={item}>{item}</Anchor>)}
         </Nav>
     )
 }

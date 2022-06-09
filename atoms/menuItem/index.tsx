@@ -1,6 +1,13 @@
+import { ReactElement } from 'react'
+import { ReactNode } from 'react'
+import { IconType } from 'react-icons'
 import { Li, LiButton, Span } from './styles'
 
-function MenuItem(props){
+type Props = {
+    item: string,
+    icon: IconType
+}
+function MenuItem(props: Props){
     return(
         <Li>
             <LiButton>

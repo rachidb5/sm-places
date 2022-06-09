@@ -9,7 +9,6 @@ function TableMolecule(){
     filteredData = filteredData.slice((pageNumber*itemsNumber)-itemsNumber,pageNumber*itemsNumber)
     filteredData = filteredData.slice(0, itemsNumber)
 
-    console.log(term)
     return(
     <TableContainer>
         <Table>

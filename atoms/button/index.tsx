@@ -1,6 +1,11 @@
 import { Btn } from './styles'
 
-function Button(props){
+type Props = {
+    text: string,
+    onClick: void
+}
+
+function Button(props, { onClick}: Props){
     return(
         <Btn type='button' onClick={props.onClick}>
             {props.text}

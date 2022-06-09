@@ -9,7 +9,7 @@ function TableOrganism(){
     const { setTerm } = useContext(Context)
     return (
         <Container>
-            <TableMenu />
+            <TableMenu list={['Todos']}/>
             <SearchInput placeholder="Busque por Nome, EAN ou Código" onChange={({ target: { value } }) => {setTerm(value)}}/>
             <TableMolecule />
         </Container>

@@ -1,6 +1,9 @@
 import { PageNumberInput } from './styles'
 
-function PaginationInput(props){
+type Props ={
+    pageNumber: number,
+}
+function PaginationInput(props: Props){
     return(
         <PageNumberInput value={props.pageNumber}/>
     )

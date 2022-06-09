@@ -1,6 +1,10 @@
 import { InputSearch } from './styles'
 
-function SearchInput(props){
+type Props = {
+    onChange: void
+    placeholder: string,
+}
+function SearchInput(props, { onChange}: Props){
     return(
         <InputSearch
             role="search"

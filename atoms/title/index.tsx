@@ -1,6 +1,9 @@
 import { TitleH1 } from './styles'
 
-function Title(props){
+type Props = {
+    title: string
+}
+function Title(props: Props){
     return (
         <TitleH1>
             {props.title}
