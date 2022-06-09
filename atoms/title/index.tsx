@@ -1,9 +1,9 @@
 import { TitleH1 } from './styles'
 
-function Title(){
+function Title(props){
     return (
         <TitleH1>
-            produtos
+            {props.title}
         </TitleH1>
     )
 }

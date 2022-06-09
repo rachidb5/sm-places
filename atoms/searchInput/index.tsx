@@ -1,15 +1,12 @@
 import { InputSearch } from './styles'
-import Context from '../../context/context'
-import { useContext } from 'react'
 
-function SearchInput(){
-    const { setTerm } = useContext(Context)
+function SearchInput(props){
     return(
         <InputSearch
             role="search"
             type='text'
-            onChange={({ target: { value } }) => {setTerm(value)}}
-            placeholder="Busque por Nome, EAN ou Código"
+            onChange={props.onChange}
+            placeholder={props.placeholder}
         />
     )
 }

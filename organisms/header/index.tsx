@@ -5,8 +5,8 @@ import { HeaderContainer } from './styles'
 function Header(){
     return(
         <HeaderContainer>
-            <Title />
-            <Button />
+            <Title title="produtos"/>
+            <Button text="Novo Produto" onCLick={() => console.log('funciona')}/>
         </HeaderContainer>
     )
 }

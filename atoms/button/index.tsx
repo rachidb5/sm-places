@@ -1,9 +1,9 @@
 import { Btn } from './styles'
 
-function Button(){
+function Button(props){
     return(
-        <Btn type='button' onClick={() => console.log("teste")}>
-            Novo Produto
+        <Btn type='button' onClick={props.onClick}>
+            {props.text}
         </Btn>
     )
 }

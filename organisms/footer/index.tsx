@@ -6,7 +6,7 @@ function Footer(){
     return (
         <FooterContainer>
             <ItemsCountContainer>
-                <Select />
+                <Select items={[5,10]}/>
                 <Label>
                     Itens por página
                 </Label>

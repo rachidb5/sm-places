@@ -3,14 +3,14 @@ const itemsTotal = [5,10]
 import { useContext } from 'react'
 import Context from '../../context/context'
 
-function Select(){
+function Select(props){
     const { setItemsNumber } = useContext(Context)
 
     return(
         <SelectInput
             role='select'
             onChange={({ target: { value } }) => {setItemsNumber(parseInt(value))}}>
-            {itemsTotal.map(item => <option key={item} value={item}>{item}</option>)}
+            {props.items.map(item => <option key={item} value={item}>{item}</option>)}
         </SelectInput>
     )
 }
